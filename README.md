@@ -4,6 +4,7 @@
 -----------------
 
 ### Insomnia collection : https://github.com/SejaMuchhal/machine_test/tree/master/API_Documentation
+#### Export format - Insomnia v4(JSON)
 
 ## i. User - Registration
 ### Create/ Register a new user.
