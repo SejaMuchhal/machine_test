@@ -1,9 +1,9 @@
 # Test Submission for Python - Django Developer position
 
-# API Documentation
+## API Documentation
 -----------------
 
-Insomnia collection : https://github.com/SejaMuchhal/machine_test/tree/master/API_Documentation
+### Insomnia collection : https://github.com/SejaMuchhal/machine_test/tree/master/API_Documentation
 
 ## i. User - Registration
 ### Create/ Register a new user.
@@ -180,9 +180,6 @@ Authorization: Token 79bc69481ba858c781071ba030a6b5018aa25add
 }
 ```
 
-
-
-
 ## v. Liked users list
 
 ## Paginated list of users who liked post
@@ -237,22 +234,5 @@ Authorization: Token 79bc69481ba858c781071ba030a6b5018aa25add
 }
 ```
 
-## Run the project Locally ##
-
-i. Clone the repository.
-
-ii. Go to directory of manage.py and install the requirements.
-
-	pip install -r requirements.txt
-	
-
-iii. Run migrations
-
-	python manage.py migrate
-
-iv. Ready to run the server.
-
-	python manage.py runserver
-	
-# Thank You
+# ---------
 	
