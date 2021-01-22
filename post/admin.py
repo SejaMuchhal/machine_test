@@ -5,15 +5,13 @@ class PostImageAdmin(admin.StackedInline):
     model = Image
     extra = 1
 
-class PostTagAdmin(admin.StackedInline):
-    model = Tag
-    extra = 1
+admin.site.register(Tag)
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     fields = ('description',)
     list_display = ('description','like_count', 'dislike_count')
-    inlines = [PostImageAdmin, PostTagAdmin]
+    inlines = [PostImageAdmin]
  
     class Meta:
        model = Post

@@ -9,7 +9,7 @@ class PostSerializer(serializers.Serializer):
     post_id = serializers.UUIDField()
     description = serializers.CharField()
     images = serializers.SerializerMethodField()
-    status = serializers.SerializerMethodField()
+    is_liked = serializers.SerializerMethodField()
     like_count = serializers.IntegerField()
     dislike_count = serializers.IntegerField()
     created_on = serializers.DateField()
@@ -18,15 +18,15 @@ class PostSerializer(serializers.Serializer):
         fields = '__all__'
         read_only_fields = fields
 
-    def get_status(self, instance):
+    def get_is_liked(self, instance):
         user = self.context.get("user")
         liked_users_set = instance.liked_users.all()
         disliked_users_set = instance.disliked_users.all()
-        status = 'no_reaction'
+        status = None
         if user in liked_users_set:
-            status = 'liked'
+            status = True
         elif user in disliked_users_set:
-            status = 'disliked'
+            status = False
         return status
     
     def get_images(self, instance):

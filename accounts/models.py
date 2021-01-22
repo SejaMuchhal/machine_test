@@ -12,7 +12,7 @@ class User(AbstractUser):
     )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    liked_posts = models.ManyToManyField('post.Post',  blank=True, related_name='user_liked')
-    disliked_posts = models.ManyToManyField('post.Post',  blank=True, related_name='user_disliked')
     liked_tags = models.ManyToManyField('post.Tag' , blank=True, related_name='user_liked')
     disliked_tags = models.ManyToManyField('post.Tag', blank=True, related_name='user_disliked')
+    
+    
