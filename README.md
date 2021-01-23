@@ -1,4 +1,3 @@
-# Test Submission for Python - Django Developer position
 
 ## API Documentation
 -----------------
