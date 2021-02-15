@@ -2,7 +2,7 @@
 ## API Documentation
 -----------------
 
-### Insomnia collection : https://github.com/SejaMuchhal/machine_test/tree/master/api_documentation
+### Insomnia collection : https://github.com/SejaMuchhal/rest_api-collection/tree/master/api_documentationn
 #### Export format - Insomnia v4(JSON)
 
 ## i. User - Registration
